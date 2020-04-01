@@ -7,7 +7,7 @@ How I setup my mac for web dev
 - [Brew](#Brew)
 - [NodeJS & Yarn](#NodeJS-&-Yarn)
 - [Github](#github)
-- [Diseable Screensaver](#diseable-screensaver)
+- [Disable Screensaver](#disable-screensaver)
 - [Mov To Gif](#mov-to-gif)
 
 ## iTerm2
@@ -37,7 +37,7 @@ How I setup my mac for web dev
 Smart Clock in terminal
 brew install tty-clock
 
-## Diseable Screensaver
+## Disable Screensaver
 defaults -currentHost write com.apple.screensaver idleTime 0
 
 ## Mov To Gif
