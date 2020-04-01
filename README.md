@@ -34,3 +34,9 @@ How I setup my mac for web dev
 ## Tty-Clock
 Smart Clock in terminal
 brew install tty-clock
+
+## Mov To Gif
+- make and export "in.mov" file with quicktime
+- brew install ffmpeg
+- brew install gifsicle
+- ```ffmpeg -i but\ back\ button-480.mov -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif```
