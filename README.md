@@ -5,8 +5,10 @@ How I setup my mac for web dev
 - [iTerm2](#iTerm2)
 - [XCode](#XCode)
 - [Brew](#Brew)
-- [NodeJS & Yarn](#NodeJS & Yarn)
+- [NodeJS & Yarn](#NodeJS-&-Yarn)
 - [Github](#github)
+- [Diseable Screensaver](#diseable-screensaver)
+- [Mov To Gif](#mov-to-gif)
 
 ## iTerm2
   - iTerm2: https://www.iterm2.com/downloads.html
@@ -34,6 +36,9 @@ How I setup my mac for web dev
 ## Tty-Clock
 Smart Clock in terminal
 brew install tty-clock
+
+## Diseable Screensaver
+defaults -currentHost write com.apple.screensaver idleTime 0
 
 ## Mov To Gif
 - make and export "in.mov" file with quicktime
