@@ -9,6 +9,7 @@ How I setup my mac for web dev
 - [Github](#github)
 - [Disable Screensaver](#disable-screensaver)
 - [Mov To Gif](#mov-to-gif)
+- [Chrono](#chrono)
 
 ## iTerm2
   - iTerm2: https://www.iterm2.com/downloads.html
@@ -45,3 +46,6 @@ defaults -currentHost write com.apple.screensaver idleTime 0
 - `brew install ffmpeg`
 - `brew install gifsicle`
 - `ffmpeg -i but\ back\ button-480.mov -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif`
+
+## Chrono
+time sleep 60s | echo "I sleep 60s"
