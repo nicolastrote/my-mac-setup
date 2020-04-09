@@ -11,6 +11,7 @@ How I setup my mac for web dev
 - [GIT](#GIT)
 - [NodeJS & Yarn](#NodeJS-&-Yarn)
 - [NVM](#NVM)
+- [Android Studio](#android-studio)
 - [Github](#github)
 - [Mov To Gif](#mov-to-gif)
 - [Chrono](#chrono)
@@ -39,8 +40,8 @@ defaults -currentHost write com.apple.screensaver idleTime 0
   - `brew update && brew upgrade` (update for already installed packages)
 
 ## Pro Tools For Front-end Dev
-````
-brew cask install firefox google-chrome slack zeplin
+```
+brew cask install yarn firefox google-chrome slack zeplin
 ```
 
 ## iTerm and Fish
@@ -101,8 +102,13 @@ end
   - NVM version
 `nvm --version`
 
+## Android Studio
+```
+brew cask install android-studio
+```
+
 ## Github
-- open iTerm2 and `cd ~ && mkdir Workspacecd && cd ~/Workspace`
+- open iTerm2 and `cd ~ && mkdir Workspace && cd ~/Workspace`
 - `yarn init`
 - `git clone https://github.com/nicolastrote/cat-fight.git && cd cat-fight`
 
