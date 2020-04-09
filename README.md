@@ -1,4 +1,4 @@
-# my-mac-setup
+# my-webdev-pro-mac-setup
 How I setup my mac for web dev
 
 ## Table of contents
@@ -6,6 +6,8 @@ How I setup my mac for web dev
 - [XCode](#XCode)
 - [Brew](#Brew)
 - [NodeJS & Yarn](#NodeJS-&-Yarn)
+- [iTerm and Fish](#iTerm-and-Fish)
+- [NVM](#NVM)
 - [Github](#github)
 - [Disable Screensaver](#disable-screensaver)
 - [Mov To Gif](#mov-to-gif)
@@ -24,10 +26,45 @@ How I setup my mac for web dev
   ```
   - `brew update && brew upgrade` (update for already installed packages)
   
- ## NodeJS & Yarn 
+## NodeJS & Yarn 
   - NodeJS and Yarn: `brew install nodejs yarn`
   - postman:
     - `brew cask install postman`
+
+## iTerm and Fish
+https://github.com/nicolastrote/how-to-configurate-Oh-My-Fish
+
+## NVM
+Nvm is usefull for switching between NodeJS versions
+
+  - Install nvm via Homebrew
+```
+brew install nvm
+```
+  - Create system directory for nvm
+```
+mkdir ~/.nvm
+```
+  - Install Bass 
+```
+git clone https://github.com/edc/bass.git
+cd bass
+make install
+```
+  - Fish config
+Add following line to your ~/.config/fish/config.fish
+```
+function nvm
+  bass source (brew --prefix nvm)/nvm.sh --no-use ';' nvm $argv
+end
+
+	set -x NVM_DIR ~/.nvm
+	nvm use default --silent
+```
+  - NVM version
+```
+nvm --version
+```
 
 ## Github
 - open iTerm2 and `cd ~ && mkdir Workspacecd && cd ~/Workspace`
