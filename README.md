@@ -4,20 +4,32 @@ How I setup my mac for web dev
 ## Table of contents
 - [iTerm2](#iTerm2)
 - [XCode](#XCode)
+- [Mac Setup](#Mac-Setup)
 - [Brew](#Brew)
-- [NodeJS & Yarn](#NodeJS-&-Yarn)
+- [Pro Tools For Front-end Dev](#Pro-Tools-For-Front-end-Dev)
 - [iTerm and Fish](#iTerm-and-Fish)
+- [GIT](#GIT)
+- [NodeJS & Yarn](#NodeJS-&-Yarn)
 - [NVM](#NVM)
 - [Github](#github)
-- [Disable Screensaver](#disable-screensaver)
 - [Mov To Gif](#mov-to-gif)
 - [Chrono](#chrono)
-
-## iTerm2
-  - iTerm2: https://www.iterm2.com/downloads.html
   
 ## XCode
   - XCode from MacOs
+  - The simulator can be open quickly with:
+  ```
+  open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app
+  ```
+  
+## Mac Setup
+- remove shortcup when press space bar:
+settings > keyboard > text > Add dot when double-tap the space bar
+
+- disable screensaver
+```
+defaults -currentHost write com.apple.screensaver idleTime 0
+```
   
 ## Brew
   - brew: https://brew.sh/
@@ -25,18 +37,43 @@ How I setup my mac for web dev
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
   ```
   - `brew update && brew upgrade` (update for already installed packages)
-  
+
+## Pro Tools For Front-end Dev
+````
+brew cask install firefox google-chrome slack zeplin
+```
+
+## iTerm and Fish
+https://github.com/nicolastrote/how-to-configurate-Oh-My-Fish
+
+## GIT
+Installation de GIT
+```
+brew cast install Git
+```
+Puis on le configure
+```
+$ git config --global color.ui true
+$ git config --global user.name "YOUR NAME"
+$ git config --global user.email "YOUR@EMAIL.com"
+```
+If you don't have ssh key, you should:
+```
+$ ssh-keygen -t rsa -C "YOUR@EMAIL.com"
+```
+The next step is to take the newly generated SSH key and add it to your Github account.
+```
+$ pbcopy < ~/.ssh/id_rsa.pub
+```
+Copy the key and paste it on your github or bitbucket or gitlab profil in settings. You be able to clone a repo with a ssh command like `git clone git@github.com:nicolastrote/my-mac-setup.git`
+
 ## NodeJS & Yarn 
   - NodeJS and Yarn: `brew install nodejs yarn`
   - postman:
     - `brew cask install postman`
 
-## iTerm and Fish
-https://github.com/nicolastrote/how-to-configurate-Oh-My-Fish
-
 ## NVM
 Nvm is usefull for switching between NodeJS versions
-
   - Install nvm via Homebrew
 ```
 brew install nvm
@@ -62,9 +99,7 @@ end
 	nvm use default --silent
 ```
   - NVM version
-```
-nvm --version
-```
+`nvm --version`
 
 ## Github
 - open iTerm2 and `cd ~ && mkdir Workspacecd && cd ~/Workspace`
@@ -74,9 +109,6 @@ nvm --version
 ## Tty-Clock
 Smart Clock in terminal
 brew install tty-clock
-
-## Disable Screensaver
-defaults -currentHost write com.apple.screensaver idleTime 0
 
 ## Mov To Gif
 - make and export "in.mov" file with quicktime
