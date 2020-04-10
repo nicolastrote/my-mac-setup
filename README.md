@@ -26,10 +26,13 @@ How I setup my mac for web dev
 ## Mac Setup
 - remove shortcup when press space bar:
 settings > keyboard > text > Add dot when double-tap the space bar
-
 - disable screensaver
 ```
-defaults -currentHost write com.apple.screensaver idleTime 0
+sudo defaults write /Library/Preferences/com.apple.screensaver loginWindowIdleTime 0
+```
+- Allow apps downloaded from Anywhere (on secured Mac)
+```
+sudo spctl --master-disable
 ```
   
 ## Brew
