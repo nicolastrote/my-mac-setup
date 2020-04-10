@@ -5,6 +5,7 @@ How I setup my mac for web dev
 - [iTerm2](#iTerm2)
 - [XCode](#XCode)
 - [Mac Setup](#Mac-Setup)
+- [Google Chrome](#Google Chrom-)
 - [Brew](#Brew)
 - [Pro Tools For Front-end Dev](#Pro-Tools-For-Front-end-Dev)
 - [iTerm and Fish](#iTerm-and-Fish)
@@ -34,7 +35,15 @@ sudo defaults write /Library/Preferences/com.apple.screensaver loginWindowIdleTi
 ```
 sudo spctl --master-disable
 ```
-  
+## Google Chrome
+```
+brew cask install google-chrome
+```
+- extensions : 
+  - React Developer Tools
+  - Redux DevTools
+  - Fonts Ninja : https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh/related
+
 ## Brew
   - brew: https://brew.sh/
   ```
