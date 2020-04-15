@@ -35,6 +35,9 @@ sudo defaults write /Library/Preferences/com.apple.screensaver loginWindowIdleTi
 ```
 sudo spctl --master-disable
 ```
+- Install Mini-calendar :
+https://apps.apple.com/ca/app/mini-calendar/id1088779979?l=fr&mt=12
+
 ## Google Chrome
 ```
 brew cask install google-chrome
