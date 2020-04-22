@@ -135,7 +135,7 @@ brew install tty-clock
 - make and export "in.mov" file with quicktime
 - `brew install ffmpeg`
 - `brew install gifsicle`
-- `ffmpeg -i input.mov -s 400x500 -pix_fmt rgb24 -r 30 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif`
+- `ffmpeg -i input.mov -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=1 --delay=3 > out.gif`
 
 ## Chrono
 time sleep 60s | echo "I sleep 60s"
