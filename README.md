@@ -38,6 +38,10 @@ sudo spctl --master-disable
 - Install Mini-calendar :
 https://apps.apple.com/ca/app/mini-calendar/id1088779979?l=fr&mt=12
 
+_ Script for Display Screeen
+https://github.com/univ-of-utah-marriott-library-apple/display_manager
+`display_manager.py res default ext0` : reset resolution on external display monitor
+
 ## Google Chrome
 ```
 brew cask install google-chrome
