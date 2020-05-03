@@ -5,6 +5,7 @@ How I setup my mac for web dev
 - [iTerm2](#iTerm2)
 - [XCode](#XCode)
 - [Mac Setup](#Mac-Setup)
+- [Webstorm](#Webstorm)
 - [Google Chrome](#Google Chrom-)
 - [Brew](#Brew)
 - [Pro Tools For Front-end Dev](#Pro-Tools-For-Front-end-Dev)
@@ -41,6 +42,10 @@ https://apps.apple.com/ca/app/mini-calendar/id1088779979?l=fr&mt=12
 _ Script for Display Screeen
 https://github.com/univ-of-utah-marriott-library-apple/display_manager
 `display_manager.py res default ext0` : reset resolution on external display monitor
+
+## Webstorm
+- https://www.jetbrains.com/webstorm/download/
+- https://plugins.jetbrains.com/plugin/10044-atom-material-icons
 
 ## Google Chrome
 ```
@@ -143,3 +148,5 @@ brew install tty-clock
 
 ## Chrono
 time sleep 60s | echo "I sleep 60s"
+
+
