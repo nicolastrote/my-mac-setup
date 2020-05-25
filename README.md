@@ -32,6 +32,10 @@ settings > keyboard > text > Add dot when double-tap the space bar
 ```
 sudo defaults write /Library/Preferences/com.apple.screensaver loginWindowIdleTime 0
 ```
+- disable powersaver
+```
+sudo -- sh -c 'pmset sleep 0 && pmset displaysleep 0 && pmset standbydelay 0'
+```
 - Allow apps downloaded from Anywhere (on secured Mac)
 ```
 sudo spctl --master-disable
