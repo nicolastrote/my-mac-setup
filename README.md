@@ -51,6 +51,10 @@ https://github.com/univ-of-utah-marriott-library-apple/display_manager
 - https://www.jetbrains.com/webstorm/download/
 - https://plugins.jetbrains.com/plugin/10044-atom-material-icons
 
+against cpu overheat:
+/Applications/IntelliJ IDEA.app/Contents/bin/idea.vmoptions
+idea.cycle.buffer.size=4096
+
 ## Google Chrome
 ```
 brew cask install google-chrome
