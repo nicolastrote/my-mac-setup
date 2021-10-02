@@ -157,4 +157,14 @@ brew install tty-clock
 ## Chrono
 time sleep 60s | echo "I sleep 60s"
 
+## Launching VS Code from command line
+In VS Code :
+* open the Command Palette (Cmd+Shift+P)
+* type 'shell command'
+* and select: Install 'code' command in PATH command.
+
+ie: `$ code ~/.bash_rc`
+
+
+
 
